@@ -1,0 +1,41 @@
+.mutq{
+    margin-left:450px;
+    margin-top: 150px;
+    padding: 16px 32px;
+}
+.mail{
+    display: block;
+    padding: 6px 20px;
+    
+    margin-bottom: 5px;
+}
+.password{
+    display: block;
+    padding: 6px 20px;
+    margin-top: px;
+    margin-bottom: 10px;
+    
+
+}
+
+.grancum{
+    margin-left: 450px;
+}
+
+.button {
+    background-color: white; 
+    color: rgb(0, 64, 240); 
+    border: 2px solid #ffffff;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display:block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  .button:hover {
+    background-color: #008CBA;
+    color: white;
+  }  

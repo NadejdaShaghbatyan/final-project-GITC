@@ -1,0 +1,117 @@
+/* faculty-list */
+
+.craete-button{
+    padding: 7px 15px;
+    color: #fff;
+    background-color: #343a40;
+    border-color: #454d55;
+    border-radius: 5px;
+    margin-left: 600px;
+}
+
+.list-fac{
+    display: inline-flex;
+}
+
+/* faculty */
+.faculty-div_1{
+    display: flex;
+    margin-left: 100px;
+}
+
+.faculty-table{
+    margin-left: 150px; 
+}
+  
+.faculty-td{
+    padding:  7px;
+}
+.faculty-th{
+    padding:  7px;
+}
+  
+.faculty-input{
+    width: 260px;
+    display: block;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+ }
+  
+.faculty-button{
+    display: inline-block;
+    padding: 5px 20px;
+    color: #007bff;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+}
+  
+.faculty-div_3{
+    margin-left: 84%;
+}
+.div_3-a{
+    margin-left: 82%;
+}
+
+
+/*Create*/
+  input{
+    border: solid 1px rgb(175, 173, 173);
+    border-radius: 5px;
+    width: 250px;
+}
+
+.form{
+    margin-top: 15px;
+    margin-left: 300px;
+}
+
+.div1{
+    display: inline;
+}
+
+.div1_1{
+    margin-top: 50px;
+    display: inline-block;
+    padding-left: 50px;
+}
+.div1_2{
+    display: inline-block;
+    padding-left: 16px;
+}
+.div1_3{
+    display: inline-block;
+    padding-left: 56px;
+}
+
+button{
+    padding: 5px 20px;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+}
+.div_2_button{
+    margin-bottom: 50px;
+    margin-left: 480px;
+}
+
+h3{
+    display: inline-flex;
+}
+.het{
+    color: black;
+}
+/*nav*/
+
+#nav{
+    position: fixed;  
+}
+
+#nav_1{
+    position: fixed;
+    margin-top: 210px;
+}
+
+.p{
+    margin-left: 15px;
+
+}

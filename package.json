@@ -1,0 +1,32 @@
+{
+  "name": "school-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "bubu": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sonaisrayel/school-backend.git"
+  },
+  "keywords": [],
+  "author": "Ijevan second group",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sonaisrayel/school-backend/issues"
+  },
+  "homepage": "https://github.com/sonaisrayel/school-backend#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "mongoose": "^6.0.13",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}

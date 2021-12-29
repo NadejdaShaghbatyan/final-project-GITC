@@ -1,0 +1,94 @@
+-var ՀԱՇՎԵՏՎՈՒԹՅՈՒՆ = "ՀԱՇՎԵՏՎՈՒԹՅՈՒՆ"
+
+doctype html
+
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        meta(name="description" content="")
+        meta(name="author" content="")
+                
+        title= title
+
+        link(rel="stylesheet" href="/assets/css/faculty.css"  type='text/css')
+
+        // Bootstrap core CSS
+        link(href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet")
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css") 
+        
+    body
+        nav(class ="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0")
+            a(class="navbar-brand col-sm-3 col-md-2 mr-0" href="#") ՀԱՄԱԼՍԱՐԱՆ
+            input(class="form-control form-control-dark w-100" type="text" placeholder="ՈՐՈՆՈՒՄ" aria-label="Search")
+            ul(class="navbar-nav px-3")
+                li(class="nav-item text-nowrap")
+                    a(href="#").nav-link ԴՈՒՐՍ ԳԱԼ
+
+        .container-fluid  
+            .row
+                nav(class="col-md-2 d-none d-md-block bg-light sidebar")
+                    .sidebar-sticky
+                        ul(class="nav flex-column" id="nav")
+                            li.nav-item
+                                p(class="p")
+                                    span(data-feather="home")
+                                    | ՑՈՒՑԱԿ
+                                    hr  
+                            li.nav-item
+                                a(href="/professions").nav-link
+                                    span(data-feather="file") 
+                                    | ՄԱՍՆԱԳԻՏՈՒԹՅՈՒՆՆԵՐ
+                            li.nav-item
+                                a(href="/faculties").nav-link
+                                    span(data-feather="shopping-cart")
+                                    | ՖԱԿՈՒԼՏԵՏ  
+                            li.nav-item
+                                a(href="/students").nav-link
+                                    span(data-feather="shopping-cart")
+                                    | ՈՒՍԱՆՈՂՆԵՐ
+                            li.nav-item
+                                a(href="/teachers").nav-link
+                                    span(data-feather="shopping-cart")
+                                    | ԴԱՍԱԽՈՍՆԵՐ
+                        h6(class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted")
+                            a(class="d-flex align-items-center text-muted" href="#")
+                                span(data-feather="plus-circle")
+                        ul(class="nav flex-column mb-2" id="nav_1")
+                            li.nav-item
+                                a(href="#").nav-link
+                                    span(data-feather="file-text")
+                                    | ԸՆԹԱՑԻԿ ԱՄԻՍ
+                            li.nav-item
+                                a(href="#").nav-link
+                                    span(data-feather="file-text")
+                                    | ԵՐԿՐՈՐԴ ԿԻՍԱՄՅԱԿ
+                            li.nav-item
+                                a(href="#").nav-link
+                                    span(data-feather="file-text")
+                                    | ՏԱՐԵՎԵՐՋԻ ԶԵՂՉԵՐ
+                form(action="/faculties" enctype="application/json"  class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4" method="post")
+                    .div_1
+                        h4 ԱՎԵԼԱՑՆԵԼ
+                        h2 ՖԱԿՈՒԼՏԵՏ
+                        hr
+                    .form
+                        .div1
+                            label(for='') ԱՆՎԱՆՈՒՄ
+                        .div1_1
+                            input.input(type='text' id="faculty" name="faculty"  value="" )
+                    .form
+                        .div1
+                        label(for='') ՈՒՍ ՏԱՐԻՆԵՐԸ
+                        .div1_2
+                        input.input(type='text' id="year" name="year"  value="" autocomplete='off' class='create-input')
+                    .form
+                        .div1
+                        label(for='') ՈՒՍ ՎՃԱՐ
+                        .div1_3
+                        input.input(type='text' id="fee"  value="" name="fee" autocomplete='off' class='create-input')
+                    br
+                    .div_2_button
+                        button(type='submit' class='create-button' onclick='validation(event)') ԱՎԵԼԱՑՆԵԼ
+                    hr
+                    a(href="/faculties" class="het") Վերադառնալ ցուցակին
